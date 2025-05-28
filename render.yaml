@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: telegram-bot
+    runtime: docker
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        fromService:
+          name: bot-token
+          type: secret
+      - key: MONGO_URI
+        fromService:
+          name: mongo-uri
+          type: secret
+      - key: OWNER_ID
+        sync: false
+        value: "123456789"  # Your Telegram ID
+    plan: free
