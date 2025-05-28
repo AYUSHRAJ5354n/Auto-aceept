@@ -1,4 +1,3 @@
-# Auto-aceept
 # Telegram Bot for Render
 
 ## Setup
