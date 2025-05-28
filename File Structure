@@ -1,0 +1,11 @@
+telegram-bot-render/
+├── app/
+│   ├── __init__.py
+│   ├── bot.py          # Main bot logic
+│   ├── database.py     # MongoDB operations
+│   └── utils.py        # Helper functions
+├── requirements.txt    # Dependencies
+├── Dockerfile          # Docker configuration
+├── render.yaml         # Render deployment config
+├── .env.example        # Environment template
+└── README.md           # Deployment guide
